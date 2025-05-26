@@ -1,0 +1,15 @@
+# Python/Django
+__pycache__/
+*.py[cod]
+*.sqlite3
+.env
+media/
+
+# Node/Vite/React
+node_modules/
+dist/
+.vite/
+.env.local
+
+# macOS system files
+.DS_Store
