@@ -18,7 +18,7 @@ export default function Signup() {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:8001/auth/users/", {
+      const response = await fetch("https://askdoc-ai.onrender.com/auth/users/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -35,9 +35,7 @@ export default function Signup() {
       navigate("/");
     } catch (error) {
       console.error("Signup failed:", error);
-      const errorText = JSON.parse(error.message);
-alert("Signup failed:\n" + JSON.stringify(errorText, null, 2));
-
+      alert("Signup failed! Please check your details.");
     }
   };
 

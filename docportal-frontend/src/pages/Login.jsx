@@ -16,7 +16,7 @@ export default function Login() {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:8001/auth/jwt/create/', {
+      const response = await fetch('https://askdoc-ai.onrender.com/auth/jwt/create/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

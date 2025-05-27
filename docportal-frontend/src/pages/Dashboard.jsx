@@ -7,7 +7,7 @@ export default function Dashboard() {
 
   const fetchDocuments = async () => {
     try {
-      const response = await fetch("http://localhost:8001/api/documents/", {
+      const response = await fetch("https://askdoc-ai.onrender.com/api/documents/", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("access")}`,
         },
@@ -28,7 +28,7 @@ export default function Dashboard() {
 
     try {
       setLoading(true);
-      const response = await fetch("http://localhost:8001/api/documents/", {
+      const response = await fetch("https://askdoc-ai.onrender.com/api/documents/", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${localStorage.getItem("access")}`,
